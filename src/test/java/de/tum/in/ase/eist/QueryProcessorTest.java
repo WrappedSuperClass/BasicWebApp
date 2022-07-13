@@ -30,7 +30,7 @@ class QueryProcessorTest {
 	}
 
 		@Test
-		public void isNotCaseSensitive2() throws Exception {
+		public void isNotCaseSensitive2() {
 
 		assertTrue(queryProcessor.process("name").contains("freddi"));
 }
