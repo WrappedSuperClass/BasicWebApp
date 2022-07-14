@@ -35,4 +35,11 @@ class QueryProcessorTest {
     }
 
 
+    @Test
+    public void blaTest(){
+        assertEquals("4034", queryProcessor.process("what is 2019 plus 2015"));
+    }
+
+
+
 }
