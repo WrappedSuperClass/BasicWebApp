@@ -15,7 +15,7 @@ public class QueryProcessor {
         if (query.contains("your name")) {
             return "Lukas";
         }
-        if (query.toLowerCase().contains("plus")) { // TODO extend the programm here
+        if (query.contains("plus")) { // TODO extend the programm here
             String[] temp1;
             temp1 = query.split("plus");
             int a = Integer.parseInt(temp1[0].replaceAll("\\D", ""));
