@@ -14,7 +14,7 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("your name")) {
-           return "lukas";
+           return "Lukas";
         } else //if(query.toLowerCase().contains("plus")){ // TODO extend the programm here
             return "";
 
