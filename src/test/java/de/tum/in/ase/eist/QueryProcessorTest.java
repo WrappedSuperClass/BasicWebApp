@@ -32,7 +32,7 @@ class QueryProcessorTest {
     @Test
     public void isNotCaseSensitive2() {
 
-        assertTrue(queryProcessor.process("name").contains("lukas"));
+        assertTrue(queryProcessor.process("your name").contains("lukas"));
     }
 
 
