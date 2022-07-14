@@ -11,9 +11,11 @@ public class QueryProcessor {
             return "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
-        } else if (query.contains("your name")) {
+        }
+        if (query.contains("your name")) {
             return "Lukas";
-        } else if (query.toLowerCase().contains("plus")) { // TODO extend the programm here
+        }
+        if (query.toLowerCase().contains("plus")) { // TODO extend the programm here
             String[] temp1;
             temp1 = query.split("plus");
             int a = Integer.parseInt(temp1[0].replaceAll("\\D", ""));
@@ -23,7 +25,8 @@ public class QueryProcessor {
 
 
 
-        } else /*if(query.contains("is the largest"))*/{
+        }
+        if(query.contains("is the largest")){
             String[] temp1;
             temp1 = query.split(",");
             int[] numbers = new int[temp1.length];
@@ -41,6 +44,7 @@ public class QueryProcessor {
 
 
         }
+        return "";
     }
     }
 
