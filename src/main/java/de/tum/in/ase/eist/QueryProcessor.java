@@ -23,7 +23,18 @@ public class QueryProcessor {
 
 
 
-        } else{
+        } else if(query.contains("is largest")){
+            String[] temp1;
+            temp1 = query.split(",");
+            int a = Integer.parseInt(temp1[0].replaceAll("\\D", ""));
+            int b = Integer.parseInt(temp1[1].replaceAll("\\D", ""));
+            if(a > b){
+                return Integer.toString(a);
+            }else
+            return Integer.toString(b);
+
+
+        }else {
             return "";
         }
     }
