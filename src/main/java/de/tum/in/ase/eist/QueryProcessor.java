@@ -23,7 +23,7 @@ public class QueryProcessor {
 
 
 
-        } else if(query.contains("is the largest")){
+        } else /*if(query.contains("is the largest"))*/{
             String[] temp1;
             temp1 = query.split(",");
             int[] numbers = new int[temp1.length];
@@ -40,8 +40,6 @@ public class QueryProcessor {
 
 
 
-        }else {
-            return "";
         }
     }
     }
