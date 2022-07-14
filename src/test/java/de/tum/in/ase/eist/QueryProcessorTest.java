@@ -41,5 +41,8 @@ class QueryProcessorTest {
     }
 
 
-
+    @Test
+    public void blaTest1(){
+        assertEquals("5792", queryProcessor.process("wich of the following numbers is the largest: 45, 5792, 8"));
+    }
 }
